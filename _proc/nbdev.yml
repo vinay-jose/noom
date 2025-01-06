@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "noom"
+  site-url: "https://vinay-jose.github.io/noom"
+  description: "A number class in python created using nbdev for learning."
+  repo-branch: main
+  repo-url: "https://github.com/vinay-jose/noom"
