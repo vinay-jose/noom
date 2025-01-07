@@ -6,7 +6,7 @@
 __all__ = ['Noom']
 
 # %% ../nbs/00_core.ipynb 3
-class Noom():
+class Noom:
     def __init__(self, val):
         assert isinstance(val, (int, float))
         self.val = val
