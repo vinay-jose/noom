@@ -3,7 +3,7 @@ project:
 
 format:
   html:
-    theme: lux
+    theme: cosmo
     css: styles.css
     toc: true
     keep-md: true
@@ -18,7 +18,7 @@ website:
     search: true
     right:
       - icon: github
-        href: https://github.com/vinay-jose/noom
+        href: https://vinay-jose.github.io/noom
   sidebar:
     style: floating
 
