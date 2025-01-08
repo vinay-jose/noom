@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Noom",
+    "section": "",
+    "text": "Install latest from the GitHub repository:\n$ pip install git+https://github.com/vinay-jose/noom.git\nor from pypi\n$ pip install noom\n\n\n\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on conda and pypi respectively.",
+    "crumbs": [
+      "Noom"
+    ]
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "Noom",
+    "section": "",
+    "text": "Install latest from the GitHub repository:\n$ pip install git+https://github.com/vinay-jose/noom.git\nor from pypi\n$ pip install noom\n\n\n\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on conda and pypi respectively.",
+    "crumbs": [
+      "Noom"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "Noom",
+    "section": "How to use",
+    "text": "How to use\n\na = Noom(2)\nb = Noom(7)\n\n\na + b\n\n9\n\n\n\na - b\n\n-5\n\n\n\na * b\n\n14\n\n\n\na // b\n\n0\n\n\n\na / b\n\n0.2857142857142857\n\n\n\na == b\n\nFalse\n\n\n\na &lt; b\n\nTrue\n\n\n\na &gt;= b\n\nFalse",
+    "crumbs": [
+      "Noom"
+    ]
+  },
+  {
+    "objectID": "index.html#developer-guide",
+    "href": "index.html#developer-guide",
+    "title": "Noom",
+    "section": "Developer Guide",
+    "text": "Developer Guide\nIf you are new to using nbdev here are some useful pointers to get you started.\n\nInstall noom in Development mode\n# make sure noom package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to noom\n$ nbdev_prepare",
+    "crumbs": [
+      "Noom"
+    ]
+  },
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "Noom’s source",
+    "section": "",
+    "text": "source\n\nNoom\n\n Noom (val)\n\nNoom is a number datatype alternative with limited capabilities.\n\nsource\n\n\nNoom.__add__\n\n Noom.__add__ (oth)\n\n\nsource\n\n\nNoom.__sub__\n\n Noom.__sub__ (oth)\n\n\nsource\n\n\nNoom.__mul__\n\n Noom.__mul__ (oth)\n\n\nsource\n\n\nNoom.__truediv__\n\n Noom.__truediv__ (oth)\n\n\nsource\n\n\nNoom.__floordiv__\n\n Noom.__floordiv__ (oth)\n\nNow, we have defined the arithmetic operations for noom objects using Python’s magic methods. Let’s take a look at few examples:\n\na = Noom(5)\nb = Noom(6)\n\n\na + b\n\n11\n\n\n\na - b\n\n-1\n\n\n\na * b\n\n30\n\n\n\na / b\n\n0.8333333333333334\n\n\n\nb // a\n\n1\n\n\n\nsource\n\n\nNoom.__eq__\n\n Noom.__eq__ (oth)\n\nReturn self==value.\nLet’s define a few nooms and look at examples…\n\np = Noom(5)\nq = Noom(5)\nr = Noom(6)\n\nHere are a couple of example to check equality of noom objects:\n\np == q, p != q\n\n(True, False)\n\n\n\np == r, p != r\n\n(False, True)\n\n\nEquality check can be done for Noom objects only after __eq__ is defined. So now, we can add tests for the arithmetic operators as weel.\n\ntest_eq(a + b, Noom(11))\n\nWe need not define __ne__ , it is auto inferred by python once __eq__ is defined. This is valid for other comparison operators too.\n\ntest_ne(a + b, Noom(12))\n\n\nsource\n\n\nNoom.__lt__\n\n Noom.__lt__ (oth)\n\nReturn self&lt;value.\nExamples:\n\np &lt; q, p &gt; q\n\n(False, False)\n\n\n\np &lt; r, p &gt; r\n\n(True, False)\n\n\n\nsource\n\n\nNoom.__le__\n\n Noom.__le__ (oth)\n\nReturn self&lt;=value.\nExamples:\n\np &lt;= q, p &gt;= q\n\n(True, True)\n\n\n\np &lt;= r, p &gt;= r\n\n(True, False)",
+    "crumbs": [
+      "Noom's source"
+    ]
+  }
+]
